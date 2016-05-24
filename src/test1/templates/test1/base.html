@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <title>{% block title %}Test 1{% endblock %}</title>
+    <script>{% block js %}  {% endblock %}</script>
+</head>
+
+<body>
+
+    <div >
+
+        <header class="w3-container w3-green w3-topbar w3-bottombar w3-border-yellow">
+            <h1>{% block header %}24-test-stepanenkoav/ticket/1{% endblock %}</h1>
+        </header>
+
+        <div class="w3-container">
+            {% block content %}Some content{% endblock %}
+        </div>
+
+    </div>
+
+</body>
+</html>
