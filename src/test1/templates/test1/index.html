@@ -5,20 +5,20 @@
 	<div class="w3-container w3-sand" style="margin:10px;">
 		<table class="w3-table">
 			<tr>
-				<td><H3>Oleksandr</H3></td>
+				<td><H3>{{ person.firstName }}</H3></td>
 				<td><H3>Contacts</H3></td>
 			</tr>
 			<tr>
-				<td><H3>Stepanenko</H3></td>
-				<td><H3>Email: stepanenko.alvl@gmail.com</H3></td>
+				<td><H3>{{ person.lastName }}</H3></td>
+				<td><H3>Email: {{ person.email }}</H3></td>
 			</tr>
 			<tr>
-				<td><H3>07/19/1982</H3></td>
-				<td><H3>Jabber: stepanenkoav@42cc.co</H3></td>
+				<td><H3>{{ person.birthDate|date:'m/d/Y' }}</H3></td>
+				<td><H3>Jabber: {{ person.jabber }}</H3></td>
 			</tr>
 			<tr>
-				<td><H3>BIO: ???</H3></td>
-				<td><H3>Skype: stepanenko.alvl</H3></td>
+				<td><H3>BIO: {{ person.BIO }}</H3></td>
+				<td><H3>Skype: {{ person.skype }}</H3></td>
 			</tr>
 		</table>
 	</div>
