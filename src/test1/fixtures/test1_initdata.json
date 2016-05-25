@@ -1,0 +1,15 @@
+[
+{
+    "model": "test1.somebody",
+    "pk": 1,
+    "fields": {
+        "firstName": "Oleksandr",
+        "lastName": "Stepanenko",
+        "birthDate": "1982-07-19",
+        "BIO": "???",
+        "email": "stepanenko.alvl@gmail.com",
+        "jabber": "stepanenkoav@42cc.co",
+        "skype": "stepanenko.alvl"
+    }
+}
+]
