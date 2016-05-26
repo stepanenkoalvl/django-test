@@ -1,5 +1,6 @@
 MANAGE=django-admin
 
+test:
 syncdb:
 	PYTHONPATH=`pwd`/src DJANGO_SETTINGS_MODULE=someProject.settings $(MANAGE) syncdb --noinput
 
