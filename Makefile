@@ -1,4 +1,4 @@
-MANAGE=django-admin.py
+MANAGE=django-admin
 
 test:
 	PYTHONPATH=`pwd`/src DJANGO_SETTINGS_MODULE=someProject.settings $(MANAGE) test test1
