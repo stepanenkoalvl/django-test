@@ -9,11 +9,15 @@ from datetime import datetime
 
 class MainViewTests(TestCase):
     
+    fixtures=['test1_initdata.json']
+    
+    '''
     def setUp(self):
         Somebody.objects.create(firstName=u'Oleksandr', lastName=u'Stepanenko',
             birthDate=datetime.strptime('07/19/1982', '%m/%d/%Y'), BIO=u'???',
             email=u'stepanenko.alvl@gmail.com', jabber=u'stepanenkoav@42cc.co',
             skype=u'stepanenko.alvl')
+    '''
 
     def test_index_view_with_first_name(self):
         response = self.client.get(reverse('test1:index'))
