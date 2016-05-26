@@ -1,10 +1,10 @@
 MANAGE=django-admin.py
 
 test:
-	PYTHONPATH=`pwd` DJANGO_SETTINGS_MODULE=django-test.src.someProject.settings $(MANAGE) test test1
+	PYTHONPATH=`pwd` $(MANAGE) test test1
 
 run:
-	PYTHONPATH=`pwd` DJANGO_SETTINGS_MODULE=django-test.src.someProject.settings $(MANAGE) runserver
+	PYTHONPATH=`pwd` $(MANAGE) runserver
 
 syncdb:
-	PYTHONPATH=`pwd` DJANGO_SETTINGS_MODULE=django-test.src.someProject.settings $(MANAGE) syncdb --noinput
+	PYTHONPATH=`pwd` $(MANAGE) syncdb --noinput
